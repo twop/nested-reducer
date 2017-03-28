@@ -1,0 +1,32 @@
+{
+  "name": "nested-reducer",
+  "version": "0.1.0",
+  "description": "helper library to deal with deeply nested state in redux",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "author": "twop",
+  "license": "MIT",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "test:w": "mocha-typescript-watch  -p tsconfig.json",
+    "test": "tsc -p . && mocha"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "redux",
+    "nested",
+    "state"
+  ],
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-typescript": "^1.0.23",
+    "ts-node": "^1.7.3",
+    "typescript": "^2.2.1"
+  }
+}
