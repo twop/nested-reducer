@@ -6,7 +6,7 @@ import {
     createHandlers,
     createReducer,
     flattenNode,
-    RootNode1,
+    RootNode,
     HandlerMap,
     Reducer
 } from '../';
@@ -65,7 +65,7 @@ class NestedReducerTests
         ["add"]: (state: number, payload: { num: number }): number => state + payload.num
       };
 
-    const rootNode: RootNode1<State> =
+    const rootNode: RootNode<State> =
       {
         handlers: {},
         children: [
