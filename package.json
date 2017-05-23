@@ -1,10 +1,14 @@
 {
   "name": "nested-reducer",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "helper library to deal with deeply nested state in redux",
-  "main": "index.js",
-  "typings": "index.d.ts",
-  "author": "twop",
+  "main": "./index",
+  "typings": "./index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twop/nested-reducer"
+  },
+  "author": "Simon Korzunov <twop.sk@gmail.com>",
   "license": "MIT",
   "scripts": {
     "tsc": "tsc",
@@ -12,10 +16,6 @@
     "test:w": "mocha-typescript-watch  -p tsconfig.json",
     "test": "tsc -p . && mocha"
   },
-  "files": [
-    "index.js",
-    "index.d.ts"
-  ],
   "keywords": [
     "redux",
     "nested",

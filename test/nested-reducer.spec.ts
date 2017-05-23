@@ -86,7 +86,7 @@ class NestedReducerTests
   }
 }
 
-export function partialAssign<T extends Object>(obj: T, props: Partial<T>): T
+function partialAssign<T extends Object>(obj: T, props: Partial<T>): T
 {
   return Object.assign(obj, props);
 }
