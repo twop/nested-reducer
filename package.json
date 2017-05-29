@@ -1,6 +1,6 @@
 {
   "name": "nested-reducer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "helper library to deal with deeply nested state in redux",
   "main": "./index",
   "typings": "./index",
