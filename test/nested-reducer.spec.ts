@@ -1,5 +1,5 @@
-import { suite, test } from "mocha-typescript";
-import { assert } from "chai"
+import { suite, test } from 'mocha-typescript';
+import { assert } from 'chai';
 
 import {
     Action,
