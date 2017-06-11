@@ -1,4 +1,4 @@
-export type Action = { type: string; }
+export type Action = { type: string; };
 export type Reducer<TState> = (prevState: TState | undefined, action: Action) => TState;
 
 export interface Handler<TState, TPayload> {
@@ -16,13 +16,12 @@ export interface StatePipe<TState, TParent> {
 
 export interface RootNode<TState> {
   handlers: HandlerMap<TState>;
-  children?: ChildNode<any>[]
+  children?: ChildNode<any>[];
 }
 
 export interface ChildNode<TState> extends RootNode<TState> {
-  statePipe: StatePipe<TState, any>
+  statePipe: StatePipe<TState, any>;
 }
-
 
 export function createReducer<TState>(handlers: HandlerMap<TState>, initialState: TState): Reducer<TState> {
   return (state: TState = initialState, action: Action): TState => {
